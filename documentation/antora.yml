@@ -1,0 +1,5 @@
+name: template-tutorial
+title: Managing User Basics
+version: master
+
+start_page: ROOT:index.adoc
