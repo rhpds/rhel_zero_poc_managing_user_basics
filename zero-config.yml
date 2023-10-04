@@ -11,7 +11,7 @@ antora:
     - name: module-04
       label: "Removing Groups"
     - name: module-05
-    - label: "Removing Users"
+      label: "Removing Users"
 
 tabs:
   - name: terminal
