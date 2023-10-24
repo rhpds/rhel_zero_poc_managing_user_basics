@@ -14,4 +14,9 @@ Confirm the account creation by examining the *passwd* file.
 grep -w guest /etc/passwd
 ----
 
+[source,bash]
+----
+guest:x:1005:1006::/home/guest:/bin/bash
+----
+
 Next, a password needs to be added to the user account to enable login.

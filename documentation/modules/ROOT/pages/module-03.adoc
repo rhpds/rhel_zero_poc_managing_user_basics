@@ -27,6 +27,12 @@ successful:
 grep -w viewers /etc/group
 ----
 
+
+[source,bash]
+----
+viewers:x:10000:
+----
+
 This file shows the group name, the GID, and which users belong to the
 group. In this case, *viewers* does not yet have any users associated
 with it, but you can see the custom GID of 10000 was successfully set.

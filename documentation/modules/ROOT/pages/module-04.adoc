@@ -8,6 +8,11 @@ run the following command:
 gpasswd -d guest viewers
 ----
 
+[source,bash]
+----
+Removing user guest from group viewers
+----
+
 ____
 _NOTE:_ This change will not take effect until the user logs in again.
 ____
@@ -31,4 +36,9 @@ showing that it now does not exist.
 [source,bash]
 ----
 usermod -aG viewers guest
+----
+
+[source,bash]
+----
+usermod: group 'viewers' does not exist
 ----

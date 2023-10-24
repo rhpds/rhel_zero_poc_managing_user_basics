@@ -16,6 +16,11 @@ summary option (`+-S+`) allows you to confirm this change.
 passwd -S guest
 ----
 
+[source,bash]
+----
+guest LK 2021-10-21 0 99999 7 -1 (Password locked.)
+----
+
 After expiring this account, *root* will still be able to log in.
 However, no other user will be able to access *guest*.
 
@@ -50,6 +55,12 @@ Try logging in as *guest* to confirm the account deletion:
 su - guest
 ----
 
+
+[source,bash]
+----
+su: user guest does not exist
+----
+
 Also confirm that the *guest* home directory has been deleted:
 
 [source,bash]
@@ -57,8 +68,18 @@ Also confirm that the *guest* home directory has been deleted:
 ls /home/guest
 ----
 
+[source,bash]
+----
+ls: cannot access '/home/guest': No such file or directory
+----
+
 ____
 _NOTE:_ If you try to delete a user that still has active processes, you
 will get the error displayed below. You must kill this user’s processes
 and try again.
 ____
+
+[source,bash]
+----
+userdel: user guest is currently used by process 1909
+----

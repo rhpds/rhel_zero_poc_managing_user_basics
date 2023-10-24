@@ -29,6 +29,17 @@ Validate the password by using the list (`+-l+`) option for the
 chage -l guest
 ----
 
+[source,bash]
+----
+Last password change                                    : Oct 21, 2021
+Password expires                                        : never
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change          : 0
+Maximum number of days between password change          : 99999
+Number of days of warning before password expires       : 7
+----
+
 This outputs useful information about when the password was last
 changed, when the password expires, and how long the user will have to
 change their password before it becomes inactive.
