@@ -16,7 +16,7 @@ grep -w guest /etc/passwd
 
 [source,bash]
 ----
-guest:x:1005:1006::/home/guest:/bin/bash
+guest:x:1889:1889::/home/guest:/bin/bash
 ----
 
 Next, a password needs to be added to the user account to enable login.

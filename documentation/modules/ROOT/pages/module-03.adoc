@@ -59,6 +59,11 @@ lists all groups associated with a user:
 groups guest
 ----
 
+[source,bash]
+----
+guest : guest viewers
+----
+
 The *viewers* group has been added alongside the account’s primary group
 (*guest*).
 
