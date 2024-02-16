@@ -1,0 +1,19 @@
+antora:
+  name: template-tutorial
+  dir: gh-pages
+  modules:
+    - name: index
+      label: "What is a User Account"
+    - name: module-02
+      label: "Setting Account Password"
+    - name: module-03
+      label: "Adding Groups"
+    - name: module-04
+      label: "Removing Groups"
+    - name: module-05
+      label: "Removing Users"
+
+tabs:
+  - name: terminal
+    port: 443
+    path: /wetty
