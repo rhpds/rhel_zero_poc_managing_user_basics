@@ -2,14 +2,14 @@
 
 Add a new account called *guest* using the `+useradd+` command:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 useradd guest
 ----
 
 Confirm the account creation by examining the *passwd* file.
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 grep -w guest /etc/passwd
 ----

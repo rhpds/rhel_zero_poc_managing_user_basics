@@ -3,7 +3,7 @@
 Create a group called *viewers* using the `+groupadd+` command. You will
 use the `+-g+` option to specify a group ID (GID), in this case 10000:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 groupadd -g 10000 viewers
 ----
@@ -22,7 +22,7 @@ ____
 Search for the group name in the `+/etc/group+` file to confirm this was
 successful:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 grep -w viewers /etc/group
 ----
@@ -40,7 +40,7 @@ secondary group option (`+-G+`) in conjunction with the append option
 (`+-a+`) to add *viewers* without overwriting any existing groups
 associated with *guest*.
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 usermod -aG viewers guest
 ----
@@ -48,7 +48,7 @@ usermod -aG viewers guest
 The `+groups+` command is useful for validating this change, because it
 lists all groups associated with a user:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 groups guest
 ----

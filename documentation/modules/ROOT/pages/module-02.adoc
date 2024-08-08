@@ -4,7 +4,7 @@ Like with `+useradd+`, you must have root access to use this command.
 Set the password for the guest account you created in the previous step
 using the following command:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 echo rhel | passwd --stdin guest
 ----
@@ -24,7 +24,7 @@ bypass these guidelines if they wish.
 Validate the password by using the list (`+-l+`) option for the
 `+chage+` command:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 chage -l guest
 ----

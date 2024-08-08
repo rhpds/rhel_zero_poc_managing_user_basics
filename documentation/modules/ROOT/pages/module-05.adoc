@@ -3,7 +3,7 @@
 The `+usermod+` command has a lock password option (`+-L+`) which
 informs the system to stop accepting a user’s login attempts.
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 usermod -L guest
 ----
@@ -11,7 +11,7 @@ usermod -L guest
 This operation does not have an output, but calling `+passwd+` with the
 summary option (`+-S+`) allows you to confirm this change.
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 passwd -S guest
 ----
@@ -38,21 +38,21 @@ account, first back up *guest*’s files. Then, add the `+-r+` option to
 specify that you wish to delete the user’s home directory along with the
 user account.
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 userdel -r guest
 ----
 
 Try logging in as *guest* to confirm the account deletion:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 su - guest
 ----
 
 Also confirm that the *guest* home directory has been deleted:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls /home/guest
 ----
